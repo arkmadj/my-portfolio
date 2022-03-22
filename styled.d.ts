@@ -45,6 +45,7 @@ declare module "styled-components" {
     width?: string;
     icon?: JSX.Element;
     reverseShadow?: boolean;
+    link?: string;
   }
 
   export interface StyledFloatingCardProps {
@@ -64,7 +65,9 @@ declare module "styled-components" {
     color?: string;
     title?: string;
     icons?: JSX.Element[];
-    description?: string; 
+    description?: string;
+    websiteLink?: string;
+    githubLink?: string;
   }
 
   export interface StyledTextProps {

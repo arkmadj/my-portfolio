@@ -45,6 +45,15 @@ export const StyledFooter = styled(Footer)`
     position: relative;
     /* background: red; */
 
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      color: orange;
+      &:hover{
+        color: orange;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -65,6 +74,16 @@ export const StyledFooter = styled(Footer)`
     gap: 10px;
     font-size: 1.2em;
     /* line-height: 24px; */
+
+    &:hover{
+      span{
+        color: orange;
+      }
+
+      svg {
+        fill: orange;
+      }
+    }
 
     span {
       font-weight: lighter;

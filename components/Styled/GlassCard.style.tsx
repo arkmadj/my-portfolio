@@ -86,6 +86,7 @@ export const StyledGlassCard = styled(GlassCard)<StyledGlassCardProps>`
       p {
         font-size: 1.1em;
         margin-bottom: 10px;
+        line-height: 1.5em;
       }
     }
   }

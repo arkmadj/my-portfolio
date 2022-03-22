@@ -1,6 +1,6 @@
 import { StyledButton } from "../Styled/Button.style";
 import { Flex } from "../Styled/Flex.style";
-import { FaGithub, FaLink, FaVuejs } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaVuejs } from "react-icons/fa";
 import { StyledGlassCardProps } from "styled-components";
 
 interface GlassCardProps extends StyledGlassCardProps {
@@ -12,6 +12,8 @@ const GlassCard: React.FC<GlassCardProps> = ({
   title,
   icons,
   description,
+  websiteLink,
+  githubLink,
 }) => {
   return (
     <Flex justifyContent="center" direction="column" className={className}>
@@ -40,14 +42,16 @@ const GlassCard: React.FC<GlassCardProps> = ({
           <p>{description}</p>
           <Flex justifyContent="space-between" isResponsive={true}>
             <StyledButton
-              icon={<FaLink />}
+              icon={<FaExternalLinkAlt />}
               text="Website"
               reverseShadow={true}
+              link={websiteLink}
             />
             <StyledButton
               icon={<FaGithub />}
               text="Github"
               reverseShadow={true}
+              link={githubLink}
             />
           </Flex>
         </div>
